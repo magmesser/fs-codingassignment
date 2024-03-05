@@ -1,0 +1,82 @@
+/* Color Variables */
+:root {
+    --primary-color: #fff;
+    --primary-accent: #e65400;
+    --secondary-color: #505050;
+    --secondary-accent: rgb(252, 184, 19);
+    --bs-body-font-family: "Open Sans", sans-serif;
+}
+
+body {
+    color: var(--secondary-color);
+}
+
+/* Navbar Styling */
+
+.logo {
+    display: block;
+    height: 1.6rem;
+    padding-left: 20%;
+}
+
+.bi-info-square-fill {
+    color: var(--secondary-accent);
+    height: fit-content;
+}
+
+.info {
+    display: none;
+}
+
+/* Body Styling */
+
+.secondary_headline {
+    color: var(--secondary-accent);
+    font-weight: 900;
+}
+
+.content {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-left: 20%;
+}
+
+.bi-question-diamond {
+    color: var(--primary-accent);
+    padding-right: 5px;
+}
+
+.bold {
+   
+}
+
+
+/* Footer Styling */
+.footer {
+    background: var(--secondary-color);
+    font-family: "Hepta Slab", serif;
+}
+
+.logo2 {
+    display: inline-block;
+    height: 1.6rem;
+}
+
+.tm {
+    font-size: xx-small;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        padding-left: 20px;
+    }
+    .content {
+        padding-left: 20px;
+    }
+
+    .info {
+        display: flex;
+    }
+}

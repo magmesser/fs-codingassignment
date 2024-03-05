@@ -15,6 +15,7 @@
 
   ## Contribution 
   🚧 [Contributor Covenant](https://www.contributor-covenant.org/) <br> 
+  Banner photo courtesy of [Pexels](https://www.pexels.com/photo/creative-female-ethnic-artist-drawing-on-graphics-tablet-7147711/)
 
   ## Questions
   ❓ Have questions? Please contact Maggie Messer at: <br>
