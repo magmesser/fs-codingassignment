@@ -3,8 +3,10 @@
     --primary-color: #fff;
     --primary-accent: #e65400;
     --secondary-color: #505050;
-    --secondary-accent: rgb(252, 184, 19);
+    --secondary-accent: #FCB813;
+    --light-secondary-color: #d6d6d6;
     --bs-body-font-family: "Open Sans", sans-serif;
+    --body-font-secondary: "Hepta Slab", serif;
 }
 
 body {
@@ -12,10 +14,12 @@ body {
 }
 
 /* Navbar Styling */
-
 .logo {
     display: block;
     height: 1.6rem;
+}
+
+.logo_link {
     padding-left: 20%;
 }
 
@@ -28,8 +32,77 @@ body {
     display: none;
 }
 
-/* Body Styling */
+/* Form Styling */
+.form_container {
+    background: var(--primary-color);
+}
 
+.form_holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.form_holder .form_content {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--light-secondary-color);
+    box-shadow: 2px 4px 4px 4px var(--light-secondary-color);
+}
+
+.form_content {
+    padding: 10px;
+}
+
+.form_content .form_items {
+    padding: 4px;
+    text-align: left;
+    transition: all 0.4s ease;
+}
+
+#form_title {
+    font-family: var(--body-font-secondary);
+    font-weight: 300;
+}
+
+.form-label:after {
+    content: " *";
+    color: var(--primary-accent);
+}
+
+#program {
+    /* color: var(--secondary-accent); */
+}
+
+#submitForm {
+    background-color: var(--primary-accent);
+    border: var(--primary-accent);
+    border-radius: 0;
+    font-size: smaller;
+    border: 2px solid var(--primary-accent);
+}
+
+#submitForm:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-accent);
+    color: var(--secondary-color);
+    transition: .5s;
+}
+
+.message .success {
+    text-align: center;
+    font-size: 15px;
+    color: green;
+    animation: buttons .3s linear;
+    display: none;
+}
+
+/* Body Styling */
 .secondary_headline {
     color: var(--secondary-accent);
     font-weight: 900;
@@ -47,15 +120,11 @@ body {
     padding-right: 5px;
 }
 
-.bold {
-   
-}
-
 
 /* Footer Styling */
 .footer {
     background: var(--secondary-color);
-    font-family: "Hepta Slab", serif;
+    font-family: var(--body-font-secondary);
 }
 
 .logo2 {
@@ -68,15 +137,38 @@ body {
     vertical-align: top;
 }
 
+/* Media Queries for Mobile and Small Devices */
 @media screen and (max-width: 600px) {
     .logo {
         padding-left: 20px;
     }
-    .content {
+
+    .logo_link {
         padding-left: 20px;
+    }
+
+    .content {
+        padding: 20px;
     }
 
     .info {
         display: flex;
+    }
+
+    .item_detail {
+        background-color: var(--light-secondary-color);
+        padding: 18px;
+        margin: 4px;
+    }
+
+    .form_holder {
+        margin-top: 1px;
+    }
+
+    .form_holder .form_content {
+        box-shadow: none;
+        border: none;
+        border-top: 1px solid var(--light-secondary-color);
+        padding-top: 40px;
     }
 }
