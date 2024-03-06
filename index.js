@@ -10,7 +10,7 @@ function message() {
     {
         setTimeout(() => {
             document.location.reload();
-        }, 5000)
+        }, 6000)
         success.style.display = 'block';
         console.log("Form submitted successfully.")
          };
